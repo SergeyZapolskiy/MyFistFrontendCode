@@ -1,0 +1,287 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+body{
+    font: 14px 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+
+.container:not(last-child){
+    margin-bottom: 100px;
+}
+
+.btn{
+    border: none;
+    border-radius: 17px;
+    background-color: #FB9475;
+    color:#fff;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    font: 12px 'Montserrat', sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 6px;
+}
+
+.organizationName{
+    font: 24px 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+}
+
+.navigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li:not(:last-child){
+    margin-right: 28px;
+}
+
+.navigation li.active a,
+.navigation a:hover{
+    color: #00BF78;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #333333;
+    font: 14px 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.contakt{
+    display: flex;
+    flex-direction: column;
+}
+
+.contakt p:not(:last-child){
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.phoneNumber{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.workTime{
+    font-size: 11px;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+}
+
+.hero_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 9px 0px 0px;
+}
+
+.hero__picture{
+    margin: 0px 63px 0px 0px;
+}
+
+.hero__title{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0px 0px 16px 0px;
+    padding: 0px;
+}
+
+.hero__tagline{
+    margin: 0px 0px 60px 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.hero_btn{
+    font-size: 14px;
+    padding: 17px 30px;
+    border-radius: 24px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    background-image: url(source/Ellipse_8.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    display: flex;
+    width: 740px;
+}
+
+.girl{
+    display: flex;
+    position: relative;
+    left: -20px;
+}
+
+.logos{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.logos>img:not(last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+.world-of-beauty{
+    line-height: 32px;
+}
+
+.text-about-beauty{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.salon-btn{
+    outline: 0px;
+    background: none;
+    border: none;
+    color: #278AFF;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.video-background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video-background::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 20%;
+}
+
+.salon__hero__video{
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 445px;
+    width: 445px;
+    height: 295px;
+    position: relative;
+}
+
+.video-name{
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.salon__hero__video:hover .video-name{
+    transform: scale(1.1);
+}
+
+.video-name::before{
+    content: url('source/Play.svg');
+}
+
+.salon__hero{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.salon__hero__text{
+    margin: 0px 125px 0px 0px;
+}
+
+.footer-contact ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact a{
+    text-decoration: none;
+    color: #333333;
+    font: 12px 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.footer-contact li:not(:last-child){
+    margin-right: 28px;
+}
+
+.footer__place{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.sea-of-beauty{
+    font-size: 12px;
+}
+
+.privacy-policy-a a{
+    color: #278AFF;
+    font-size: 12px;
+}
+
+.privacy-policy-a{
+    margin: 0px 0px 20px 0px;
+}
+
+.sea-of-beauty{
+    margin: 0px 0px 8px 0px;
+}
